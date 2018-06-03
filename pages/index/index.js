@@ -5,7 +5,8 @@ Page({
    */
   data: {
     country_list:['国内',
-    '国际','财经','娱乐','体育','其它',]
+    '国际','财经','娱乐','体育','其它',],
+    hotNews:''
   },
 
   /**
@@ -17,9 +18,14 @@ Page({
       data:{
         type:'gj'
       },
-      success:function(res){
-        console.log(res.data)
-      }
+      success:res=>{
+        let result = res.data.result
+        let title = result[0].title
+        console.log(title)
+        this.setData({
+          hotNews:title
+        })
+      }      
     })
   }
 })
