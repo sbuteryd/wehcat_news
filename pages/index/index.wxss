@@ -1,0 +1,7 @@
+.title_bar{
+  display: flex
+}
+.title_name{
+  margin: 28rpx;
+  font-size: 35rpx
+}

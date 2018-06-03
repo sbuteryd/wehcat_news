@@ -1,0 +1,5 @@
+<view class='title_bar' >
+  <view class ="title_name" wx:for="{{country_list}}">
+  {{item}}
+  </view>
+</view>
